@@ -24,3 +24,26 @@ $colori=[
         ['nero', 'lutto']
     ];
  ?>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <table style="border: 1px solid black;">
+        <tr>
+            <td style="border: 1px solid black;">Colore</td>
+            <td style="border: 1px solid black;">Sensazione</td>
+        </tr>
+       
+       <?php
+        foreach($colori as $colore){
+        echo '<tr><td style="border: 1px solid black;">' . $colore[0] . '</td><td style="border: 1px solid black;">' . $colore[1] . '</td></tr>';
+        }
+       ?>
+    </table>
+ </body>
+ </html>
